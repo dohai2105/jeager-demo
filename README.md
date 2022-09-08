@@ -1,3 +1,10 @@
-# opentracing-microservices-example
+## How to run
+- mvn clean install -f ./animal-name-service 
+- mvn clean install -f ./name-generator-service
+- mvn clean install -f ./scientist-name-service
+- docker-compose up
 
-This is source code for blog [Jaeger Integration With Spring Boot Application](https://medium.com/xebia-engineering/jaeger-integration-with-spring-boot-application-3c6ec4a96a6f).
+## How to test
+- Call API: http://localhost:8080/api/v1/names/random
+- Jeager path: http://localhost:9090/
+
